@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+    <title>Icon Template Square</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+                 body {
+    background-color: #E4EDEF; /* blue */
+}
+
+        
+.row{
+    width:720px;
+    margin: 10px auto;
+}
+
+.image-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding:25px;
+}
+
+/* wrapper for stacked images */
+.img-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.img-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* default image */
+.img-default {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* hover image */
+.img-hover {
+    opacity: 0;
+    z-index: 2;
+}
+
+/* hover effect */
+.img-wrapper:hover .img-hover {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+.img-wrapper:hover .img-default {
+    opacity: 0;
+    transform: scale(1.08);
+}
+</style>
+
+
+
+    </head>
+    
+
+    <body>
+   
+
+         <div class="row">
+    <div class="image-container">
+        <div class="img-wrapper" id="img1">
+            <img class="img-default" src="img/icon1.png">
+            <img class="img-hover" src="img/icon1alt.png">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="img-wrapper" id="img2">
+            <img class="img-default" src="img/icon2.png">
+            <img class="img-hover" src="img/icon2alt.png">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="img-wrapper" id="img3">
+            <img class="img-default" src="img/icon3.png">
+            <img class="img-hover" src="img/icon3alt.png">
+        </div>
+    </div>
+</div>
+        </div>
+
+       <div class="row">
+    <div class="image-container">
+        <div class="img-wrapper" id="img4">
+            <img class="img-default" src="img/icon4.png">
+            <img class="img-hover" src="img/icon4alt.png">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="img-wrapper" id="img5">
+            <img class="img-default" src="img/icon5.png">
+            <img class="img-hover" src="img/icon5alt.png">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="img-wrapper" id="img6">
+            <img class="img-default" src="img/icon6.png">
+            <img class="img-hover" src="img/icon6alt.png">
+        </div>
+    </div>
+</div>
+
+      <div class="row">
+    <div class="image-container">
+        <div class="img-wrapper" id="img7">
+            <img class="img-default" src="img/icon7.png">
+            <img class="img-hover" src="img/icon7alt.png">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="img-wrapper" id="img8">
+            <img class="img-default" src="img/icon8.png">
+            <img class="img-hover" src="img/icon8alt.png">
+        </div>
+    </div>
+
+    <div class="image-container">
+        <div class="img-wrapper" id="img9">
+            <img class="img-default" src="img/icon9.png">
+            <img class="img-hover" src="img/icon9alt.png">
+        </div>
+    </div>
+</div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/sound1.wav");
+            var sound2 = new buzz.sound("sound/sound2.wav");
+            var sound3 = new buzz.sound("sound/sound3.wav");
+            var sound4 = new buzz.sound("sound/sound4.wav");
+            var sound5 = new buzz.sound("sound/sound5.wav");
+            var sound6 = new buzz.sound("sound/sound6.wav");
+            var sound7 = new buzz.sound("sound/sound7.wav");
+            var sound8 = new buzz.sound("sound/sound8.wav");
+            var sound9 = new buzz.sound("sound/sound9.wav");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
